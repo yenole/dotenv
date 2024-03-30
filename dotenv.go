@@ -2,7 +2,6 @@ package dotenv
 
 import (
 	"flag"
-	"fmt"
 	"os"
 	"strings"
 )
@@ -48,11 +47,7 @@ func FlagParse(ops ...Option) error {
 		}
 	}
 	prefix := ops[0].Prefix
-	fmt.Printf("prefix: %v\n", prefix)
 	for _, v := range os.Environ() {
-		if strings.HasPrefix(v, prefix) {
-			fmt.Printf("v: %v\n", v)
-		}
 		if !strings.HasPrefix(v, prefix) ||
 			!strings.Contains(v, "=") {
 			continue
