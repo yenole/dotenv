@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/yenole/dotenv.git"
+	"github.com/yenole/dotenv"
 )
 
 func TestOk(t *testing.T) {
