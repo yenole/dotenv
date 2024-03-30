@@ -1,3 +1,3 @@
-module github.com/yenole/dotenv.git
+module github.com/yenole/dotenv
 
 go 1.17
